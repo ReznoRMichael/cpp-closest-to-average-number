@@ -9,6 +9,8 @@ using namespace std;
 int main() {
 
   int nr = 5;
+
+  /* uncomment for manual user input */
   // double allNumbers[nr];
 
   /* Test #0 */
@@ -39,6 +41,7 @@ int main() {
 
   for (int i=0; i<nr; i++) {
 
+    /* uncomment for manual user input */
     // cin >> allNumbers[i];
 
     sumNumbers += allNumbers[i];
