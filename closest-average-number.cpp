@@ -75,9 +75,11 @@ int main() {
     }
   }
 
+  /* Calculate what is the difference between average and found numbers, so a comparison can be made to find the closest one */
   lowNumberDifference = average - lowNumber;
   highNumberDifference = highNumber - average;
 
+  /* Find the closest number from the two */
   if (lowNumberDifference <= highNumberDifference) {
     closestNumber = lowNumber;
   }
@@ -85,11 +87,19 @@ int main() {
     closestNumber = highNumber;
   }
 
+  /* ==================== Show calculation results =================== */
+
   cout << "-------------\n";
   cout << "Average        = " << average;
 
   cout << '\n';
   cout << "Closest Number = " << closestNumber;
+
+  /* Optionally show 2 closest numbers, if both have the same difference to the average */
+  if (lowNumberDifference == highNumberDifference) {
+    cout << '\n';
+    cout << "Closest Number #2 = " << highNumber;
+  }
 
   cout << "\n-------------\n";
   cout << "Low Number  = " << lowNumber;
