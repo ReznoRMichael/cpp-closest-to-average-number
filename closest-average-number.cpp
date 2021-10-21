@@ -23,10 +23,10 @@ int main() {
   double sumNumbers = 0;
   double average = 0;
 
-/* 
-https://en.cppreference.com/w/cpp/types/numeric_limits/lowest
-https://en.cppreference.com/w/cpp/types/numeric_limits/max
-*/
+  /* 
+  https://en.cppreference.com/w/cpp/types/numeric_limits/lowest
+  https://en.cppreference.com/w/cpp/types/numeric_limits/max
+  */
   double lowNumber = numeric_limits<double>::lowest(); // lowest possible number in double
   double highNumber = numeric_limits<double>::max(); // highest possible number in double
 
@@ -68,20 +68,20 @@ https://en.cppreference.com/w/cpp/types/numeric_limits/max
     closestNumber = highNumber;
   }
 
-  cout << '\n';
-  cout << "Average = " << average;
+  cout << "-------------\n";
+  cout << "Average        = " << average;
 
   cout << '\n';
   cout << "Closest Number = " << closestNumber;
 
-  cout << '\n';
-  cout << "Low Number = " << lowNumber;
+  cout << "\n-------------\n";
+  cout << "Low Number  = " << lowNumber;
 
   cout << '\n';
   cout << "High Number = " << highNumber;  
 
-  cout << '\n';
-  cout << "Low Number Difference = " << lowNumberDifference;
+  cout << "\n-------------\n";
+  cout << "Low Number Difference  = " << lowNumberDifference;
 
   cout << '\n';
   cout << "High Number Difference = " << highNumberDifference;  
