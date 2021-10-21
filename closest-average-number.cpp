@@ -8,6 +8,7 @@ using namespace std;
 
 int main() {
 
+  /* how many total numbers there are */
   int nr = 5;
 
   /* uncomment for manual user input */
@@ -25,6 +26,7 @@ int main() {
   /* Test #3 */
   double allNumbers[nr] = {6.5, 3.5, 0, 15, 0};
 
+  /* For storing average value and sum of all numbers */
   double sumNumbers = 0;
   double average = 0;
 
@@ -35,9 +37,14 @@ int main() {
   double lowNumber = numeric_limits<double>::lowest(); // lowest possible number in double
   double highNumber = numeric_limits<double>::max(); // highest possible number in double
 
+  /* For storing differences between average and lowNumber/highNumber */
   double lowNumberDifference = 0;
   double highNumberDifference = 0;
+
+  /* Store closest number */
   double closestNumber = 0;
+
+  /* ======================= Program Start ========================= */
 
   cout << "Enter 5 numbers: ";
   cout << '\n';
@@ -47,18 +54,22 @@ int main() {
     /* uncomment for manual user input */
     // cin >> allNumbers[i];
 
+    /* Calculate sum of all numbers */
     sumNumbers += allNumbers[i];
   }
 
+  /* Calculate average of all numbers */
   average = sumNumbers / nr;
 
   for (int i=0; i<nr; i++) {
 
     cout << "Number " << i << ": " << allNumbers[i] << '\n';
 
+    /* Find closest number below average */
     if (allNumbers[i] <= average && allNumbers[i] >= lowNumber) {
       lowNumber = allNumbers[i];
     }
+    /* Find closest number above average */
     else if (allNumbers[i] >= average && allNumbers[i] <= highNumber) {
       highNumber = allNumbers[i];
     }
