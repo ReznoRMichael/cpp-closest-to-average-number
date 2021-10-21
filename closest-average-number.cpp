@@ -20,7 +20,10 @@ int main() {
   // double allNumbers[nr] = {-55, -44, -33, 11, 22};
 
   /* Test #2 */
-  double allNumbers[nr] = {3, 5, 3, 1, 3};
+  // double allNumbers[nr] = {3, 5, 3, 1, 3};
+
+  /* Test #3 */
+  double allNumbers[nr] = {6.5, 3.5, 0, 15, 0};
 
   double sumNumbers = 0;
   double average = 0;
