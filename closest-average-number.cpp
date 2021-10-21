@@ -1,4 +1,7 @@
 #include <iostream>
+
+/* This allows us to use lowest/highest possible numbers in a variable
+https://en.cppreference.com/w/cpp/types/numeric_limits/ */
 #include <limits>
 
 using namespace std;
@@ -16,9 +19,15 @@ int main() {
 
   double sumNumbers = 0;
   double average = 0;
-  double lowNumber = numeric_limits<double>::lowest();
+
+/* 
+https://en.cppreference.com/w/cpp/types/numeric_limits/lowest
+https://en.cppreference.com/w/cpp/types/numeric_limits/max
+*/
+  double lowNumber = numeric_limits<double>::lowest(); // lowest possible number in double
+  double highNumber = numeric_limits<double>::max(); // highest possible number in double
+
   double lowNumberDifference = 0;
-  double highNumber = numeric_limits<double>::max();
   double highNumberDifference = 0;
   double closestNumber = 0;
 
