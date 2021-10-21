@@ -66,11 +66,11 @@ int main() {
     cout << "Number " << i << ": " << allNumbers[i] << '\n';
 
     /* Find closest number below average */
-    if (allNumbers[i] <= average && allNumbers[i] >= lowNumber) {
+    if (allNumbers[i] <= average && allNumbers[i] > lowNumber) {
       lowNumber = allNumbers[i];
     }
     /* Find closest number above average */
-    else if (allNumbers[i] >= average && allNumbers[i] <= highNumber) {
+    else if (allNumbers[i] >= average && allNumbers[i] < highNumber) {
       highNumber = allNumbers[i];
     }
   }
