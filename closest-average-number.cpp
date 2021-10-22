@@ -1,6 +1,6 @@
 #include <iostream>
 
-/* This allows us to use lowest/highest possible number of a variable (like double)
+/* This allows us to use lowest/highest possible number of a variable type (like double)
 https://en.cppreference.com/w/cpp/types/numeric_limits/ */
 #include <limits>
 
